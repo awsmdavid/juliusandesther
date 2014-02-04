@@ -212,6 +212,12 @@ img.image_box1_content {
 	overflow: auto;
 	}
 
+#from-from{
+	font-family: Georgia;
+	font-size: 24px;
+	text-align: center;
+}
+
 #from-esther-wrapper {
 	width: 460px;
 	float: left;
@@ -447,6 +453,9 @@ img.image_box1_content {
 
 #bm-title {
 	background: url("http://juliusandesther.com/resources/img/bridesmaids.png") no-repeat scroll center bottom transparent;
+	font-family: 'Great Vibes', cursive;
+	font-size: 64px;
+	text-align: center;
 	width: 398px;
 	height: 170px;
 	margin-top: 60px;
@@ -467,6 +476,9 @@ img.image_box1_content {
 
 #gm-title {
 	background: url("http://juliusandesther.com/resources/img/groomsmen.png") no-repeat scroll center bottom transparent;
+	font-family: 'Great Vibes', cursive;
+	font-size: 64px;
+	text-align: center;	
 	width: 397px;
 	height: 170px;
 	margin-top: 60px;
