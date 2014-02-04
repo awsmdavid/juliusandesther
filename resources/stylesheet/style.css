@@ -196,14 +196,14 @@ img.image_box1_content {
 	overflow: auto;
 	}
 
-#from-ash-wrapper {
+#from-esther-wrapper {
 	width: 460px;
 	float: left;
 	margin-left: auto;
 	margin-right: auto;
 	}
 
-#from-ash-title {
+#from-esther-title {
 	background: url("http://static.ashleyjeremy.com/fromashley.png") no-repeat scroll center bottom transparent;
 	width: 399px;
 	height: 165px;
@@ -212,7 +212,7 @@ img.image_box1_content {
 	margin-right: auto;
 	}
 
-#from-ash-text {
+#from-esther-text {
 	width: 399px;
 	margin-top: 0px;
 	margin-bottom: 0px;
@@ -222,14 +222,14 @@ img.image_box1_content {
 	font-size: 13px;
 	}
 
-#from-jeremy-wrapper {
+#from-julius-wrapper {
 	width: 460px;
 	float: right;
 	margin-left: auto;
 	margin-right: auto;
 	}
 
-#from-jeremy-title {
+#from-julius-title {
 	background: url("http://static.ashleyjeremy.com/fromjeremy.png") no-repeat scroll center bottom transparent;
 	width: 399px;
 	height: 165px;
@@ -238,7 +238,7 @@ img.image_box1_content {
 	margin-right: auto;
 	}
 
-#from-jeremy-text {
+#from-julius-text {
 	width: 399px;
 	margin-top: 0px;
 	margin-bottom: 0px;
@@ -418,7 +418,7 @@ img.image_box1_content {
 	}
 
 #bm-title {
-	background: url("http://static.ashleyjeremy.com/bridesmaids.png") no-repeat scroll center bottom transparent;
+	background: url("http://juliusandesther.com/resources/img/bridesmaids.png") no-repeat scroll center bottom transparent;
 	width: 398px;
 	height: 170px;
 	margin-top: 60px;
@@ -438,7 +438,7 @@ img.image_box1_content {
 	}
 
 #gm-title {
-	background: url("http://static.ashleyjeremy.com/groomsmen.png") no-repeat scroll center bottom transparent;
+	background: url("http://juliusandesther.com/resources/img/groomsmen.png") no-repeat scroll center bottom transparent;
 	width: 397px;
 	height: 170px;
 	margin-top: 60px;
