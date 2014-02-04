@@ -31,7 +31,7 @@ img.image_box1_content {
 	}
 
 #mask {
- 	background: url("http://static.ashleyjeremy.com/preloader.gif") no-repeat fixed center center transparent;
+ 	background: url("http://juliusandesther.com/resources/img/preloader.gif") no-repeat fixed center center transparent;
     position:absolute; 
     top:0; 
     left:0; 
@@ -43,7 +43,7 @@ img.image_box1_content {
 
 
 #header {
-    background: url("http://static.ashleyjeremy.com/nav_shadow.png") repeat-x scroll center bottom transparent;
+    background: url("http://juliusandesther.com/resources/img/nav_shadow.png") repeat-x scroll center bottom transparent;
     position: fixed;
     top: 0px;
     left: 0px;
@@ -71,66 +71,80 @@ img.image_box1_content {
 	}
     
 #nav_aboutus {
-	background: url("http://static.ashleyjeremy.com/nav-aboutus.png") no-repeat scroll left bottom transparent;
-    position: relative;
+	font-family: 'Great Vibes', cursive;
+	font-size: 24px;
+	text-align: center;
+	position: relative;
     float: left;
     cursor: pointer;
-    top: 0px;
+    top: 20px;
     height: 50px;
     width: 98px;
     z-index: 1100;
 	}
 
 #nav_proposal {
-	background: url("http://static.ashleyjeremy.com/nav-proposal.png") no-repeat scroll left bottom transparent;
-    position: relative;
+	font-family: 'Great Vibes', cursive;
+	font-size: 24px;
+	text-align: center;  
+	position: relative;
     float: left;
     cursor: pointer;
-    top: 0px;
+    top: 20px;
     height: 50px;
     width: 134px;
     z-index: 1100;
 	}
 	
 #nav_photos {
-	background: url("http://static.ashleyjeremy.com/nav-photos.png") no-repeat scroll left bottom transparent;
-    position: relative;
+	font-family: 'Great Vibes', cursive;
+	font-size: 24px;
+	text-align: center;
+	position: relative;
     float: left;
     cursor: pointer;
-    top: 0px;
+    top: 20px;
     height: 50px;
     width: 85px;
     z-index: 1100;
 	}
 	
 #nav_guestbook {
-	background: url("http://static.ashleyjeremy.com/nav-guestbook.png") no-repeat scroll left bottom transparent;
-    position: relative;
+	font-family: 'Great Vibes', cursive;
+	font-size: 24px;
+	text-align: center;
+	position: relative;
     float: right;
     cursor: pointer;
-    top: 0px;
+    top: 20px;
     height: 50px;
     width: 110px;
     z-index: 1100;
 	}
 	
 #nav_registry {
-	background: url("http://static.ashleyjeremy.com/nav-registry.png") no-repeat scroll left bottom transparent;
-    position: relative;
+	font-family: 'Great Vibes', cursive;
+	font-size: 24px;
+	text-align: center;
+
+	position: relative;
     float: right;
     cursor: pointer;
-    top: 0px;
+    top: 20px;
     height: 50px;
     width: 96px;
     z-index: 1100;
 	}
 
 #nav_thewedding {
-	background: url("http://static.ashleyjeremy.com/nav-thewedding.png") no-repeat scroll left bottom transparent;
-    position: relative;
+	font-family: 'Great Vibes', cursive;
+	font-size: 24px;
+	text-align: center;
+
+	position: relative;
     float: right;
     cursor: pointer;
-    top: 0px;
+    top: 20px;
     height: 50px;
     width: 112px;
     z-index: 1100;
@@ -149,8 +163,10 @@ img.image_box1_content {
 	}
 
 #about-us-title {
-	background: url("http://static.ashleyjeremy.com/aboutus_title.png") no-repeat scroll center bottom transparent;
-	width: 212px;
+	font-family: 'Great Vibes', cursive;
+	font-size: 64px;
+	text-align: center;
+	width: 300px;
 	height: 68px;
 	margin-top: 120px;
 	margin-left: auto;
@@ -158,7 +174,7 @@ img.image_box1_content {
 	}
 	
 #about-us-box-top {
-	background: url("http://static.ashleyjeremy.com/bg-box2-top.png") no-repeat scroll center bottom transparent;
+	background: url("http://juliusandesther.com/resources/img/bg-box2-top.png") no-repeat scroll center bottom transparent;
 	width: 687px;
 	height: 48px;
 	margin-top: 18px;
@@ -168,7 +184,7 @@ img.image_box1_content {
 	}
 	
 #about-us-box-middle {
-	background: url("http://static.ashleyjeremy.com/bg-box2-middle.png") repeat-y scroll center bottom transparent;
+	background: url("http://juliusandesther.com/resources/img/bg-box2-middle.png") repeat-y scroll center bottom transparent;
 	width: 687px;
 	margin-top: 0px;
 	margin-bottom: 0px;
@@ -178,7 +194,7 @@ img.image_box1_content {
 	}
 	
 #about-us-box-bottom {
-	background: url("http://static.ashleyjeremy.com/bg-box2-bottom.png") no-repeat scroll center bottom transparent;
+	background: url("http://juliusandesther.com/resources/img/bg-box2-bottom.png") no-repeat scroll center bottom transparent;
 	width: 731px;
 	height: 114px;
 	margin-top: 0px;
@@ -249,7 +265,9 @@ img.image_box1_content {
 	}
 
 #proposal-title {
-	background: url("http://static.ashleyjeremy.com/theproposal_title.png") no-repeat scroll center bottom transparent;
+	font-family: 'Great Vibes', cursive;
+	font-size: 64px;
+	text-align: center;
 	width: 338px;
 	height: 125px;
 	margin-top: 120px;
@@ -266,8 +284,9 @@ img.image_box1_content {
 
 
 #photos-title {
-	background: url("http://static.ashleyjeremy.com/photos_title.png") no-repeat scroll center bottom transparent;
-	width: 151px;
+	font-family: 'Great Vibes', cursive;
+	font-size: 64px;
+	text-align: center;width: 151px;
 	height: 68px;
 	margin-top: 40px;
 	margin-left: auto;
@@ -337,7 +356,9 @@ img.image_box1_content {
 
 
 #the-wedding-title {
-	background: url("http://static.ashleyjeremy.com/thewedding_title.png") no-repeat scroll center bottom transparent;
+	font-family: 'Great Vibes', cursive;
+	font-size: 64px;
+	text-align: center;
 	width: 371px;
 	height: 161px;
 	margin-top: 120px;
@@ -457,7 +478,9 @@ img.image_box1_content {
 	}
 
 #registry-title {
-	background: url("http://static.ashleyjeremy.com/registry_title.png") no-repeat scroll center bottom transparent;
+	font-family: 'Great Vibes', cursive;
+	font-size: 64px;
+	text-align: center;
 	width: 207px;
 	height: 99px;
 	margin-top: 120px;
@@ -466,8 +489,9 @@ img.image_box1_content {
 	}
 	
 #guestbook-title {
-	background: url("http://static.ashleyjeremy.com/guestbook_title.png") no-repeat scroll center bottom transparent;
-	width: 338px;
+	font-family: 'Great Vibes', cursive;
+	font-size: 64px;
+	text-align: center;width: 338px;
 	height: 125px;
 	margin-top: 120px;
 	margin-left: auto;
