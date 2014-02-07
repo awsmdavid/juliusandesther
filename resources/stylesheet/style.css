@@ -28,7 +28,7 @@ p {
 
 img.image_box1_content {
 	padding-top: 15px;
-	}
+}
 
 #mask {
  	background: url("http://juliusandesther.com/resources/img/preloader.gif") no-repeat fixed center center transparent;
@@ -50,7 +50,7 @@ img.image_box1_content {
     height: 158px;
     width: 100%;
 	z-index: 999;
-	}
+}
 	
 
 #nav_bg {
@@ -61,14 +61,14 @@ img.image_box1_content {
     height: 158px;
     width: 100%;
     z-index: 1000;
-    }
+}
     
 #nav_item_wrapper {
 	width: 1000px;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	}
+}
     
 #nav_aboutus {
 	font-family: 'Great Vibes', cursive;
