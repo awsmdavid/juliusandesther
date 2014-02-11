@@ -18,3 +18,14 @@ function goToByScroll(id){
 $(window).load(function () {
     $('#mask').fadeOut('slow');
 });
+
+
+var thePassword = "craps";
+password=prompt('Enter Password','');
+password=md5(password);
+if(md5(password) == thePassword){ window.location = password + "/"; }
+else { alert("incorrect"); }
+
+
+
+
