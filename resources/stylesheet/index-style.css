@@ -1,0 +1,191 @@
+html {
+    padding: 0;
+    margin: 0;
+}
+    
+body {
+	font-family: georgia;
+}
+
+/*security*/
+#cboxOverlay {
+    background: none repeat scroll 0 0 #000000;
+    height: 100%;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+
+a {
+    color: #F2797F;
+    text-decoration: underline;
+}
+
+a.registry_link {
+	text-decoration: none;
+}
+
+img.image_box1_content {
+	padding-top: 15px;
+}
+
+#mask {
+ 	background: url("http://juliusandesther.com/resources/img/preloader.gif") no-repeat fixed center center transparent;
+    position:absolute; 
+    top:0; 
+    left:0; 
+    right:0; 
+    bottom:0; 
+    background-color:white; 
+    z-index:99999;
+}
+
+
+#header {
+    background: url("http://juliusandesther.com/resources/img/nav_shadow.png") repeat-x scroll center bottom transparent;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 158px;
+    width: 100%;
+	z-index: 999;
+}
+	
+
+#nav_bg {
+    background: url("http://juliusandesther.com/resources/img/nav.png") no-repeat scroll center bottom transparent;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 158px;
+    width: 100%;
+    z-index: 1000;
+}
+    
+#nav_item_wrapper {
+	width: 1000px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+    
+#nav_aboutus {
+	font-family: 'Average Sans', sans-serif;
+	font-size: 16px;
+	text-align: center;
+	text-transform: uppercase;
+	position: relative;
+    float: left;
+    cursor: pointer;
+    top: 20px;
+    height: 50px;
+    width: 98px;
+    z-index: 1100;
+}
+
+#nav_proposal {
+	font-family: 'Average Sans', sans-serif;
+	font-size: 16px;
+	text-align: center;  
+	text-transform: uppercase;
+	position: relative;
+    float: left;
+    cursor: pointer;
+    top: 20px;
+    height: 50px;
+    width: 134px;
+    z-index: 1100;
+}
+	
+#nav_photos {
+	font-family: 'Average Sans', sans-serif;
+	font-size: 16px;
+	text-align: center;
+	text-transform: uppercase;
+	position: relative;
+    float: left;
+    cursor: pointer;
+    top: 20px;
+    height: 50px;
+    width: 85px;
+    z-index: 1100;
+}
+	
+#nav_rsvp {
+	font-family: 'Average Sans', sans-serif;
+	font-size: 16px;
+	text-align: center;
+	text-transform: uppercase;
+	position: relative;
+    float: right;
+    cursor: pointer;
+    top: 20px;
+    height: 50px;
+    width: 110px;
+    z-index: 1100;
+}
+	
+#nav_registry {
+	font-family: 'Average Sans', sans-serif;
+	font-size: 16px;
+	text-align: center;
+	text-transform: uppercase;
+	position: relative;
+    float: right;
+    cursor: pointer;
+    top: 20px;
+    height: 50px;
+    width: 96px;
+    z-index: 1100;
+}
+
+#nav_thewedding {
+	font-family: 'Average Sans', sans-serif;
+	font-size: 16px;
+	text-align: center;
+	text-transform: uppercase;
+	position: relative;
+    float: right;
+    cursor: pointer;
+    top: 20px;
+    height: 50px;
+    width: 112px;
+    z-index: 1100;
+}
+
+
+#nav_aboutus:hover{
+	color: #CC99FF;
+}
+
+#nav_proposal:hover {
+	color: #CC99FF;
+}
+	
+#nav_photos:hover {
+	color: #CC99FF;
+}
+	
+#nav_rsvp:hover {
+	color: #CC99FF;
+}
+	
+#nav_registry:hover {
+	color: #CC99FF;
+}
+
+#nav_thewedding:hover {
+	color: #CC99FF;
+}
+    
+#gridwidth {
+	margin-top: 67px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 1000px;
+}
+
+#lead-photo {
+	height: 664px;
+	width: 1000px;
+}
