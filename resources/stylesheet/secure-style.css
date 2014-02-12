@@ -47,9 +47,9 @@ img.image_box1_content {
     right:0; 
     bottom:0; 
     background-color:white; 
+    text-transform: uppercase;
     z-index:99999;
 }
-
 
 #header {
     background: url("http://juliusandesther.com/resources/img/nav_shadow.png") repeat-x scroll center bottom transparent;
@@ -165,27 +165,27 @@ img.image_box1_content {
 
 
 #nav_aboutus:hover{
-	color: #CC99FF;
+	color: #AD85FF;
 }
 
 #nav_proposal:hover {
-	color: #CC99FF;
+	color: #AD85FF;
 }
 	
 #nav_photos:hover {
-	color: #CC99FF;
+	color: #AD85FF;
 }
 	
 #nav_rsvp:hover {
-	color: #CC99FF;
+	color: #AD85FF;
 }
 	
 #nav_registry:hover {
-	color: #CC99FF;
+	color: #AD85FF;
 }
 
 #nav_thewedding:hover {
-	color: #CC99FF;
+	color: #AD85FF;
 }
     
 #gridwidth {
