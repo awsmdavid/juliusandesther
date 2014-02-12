@@ -6,6 +6,11 @@ function goToByScroll(id){
     $('html,body').stop().animate({scrollTop: ($("#"+id).offset().top)-=150},{duration: 1500, easing: "easeInOutExpo"});
 }
 
+function loadSecureContent(){
+    $('#secure-content').load(hashlink + ' #secure-content');
+    $('#nav_item_wrapper').load(hashlink + ' #nav_item_wrapper');
+}
+
 function login(id) {
     // use to generate future pws
     // var thePassword = "craps";
@@ -19,13 +24,13 @@ function login(id) {
         $('#secure-content').load(hashlink + ' #secure-content');
         $('#nav_item_wrapper').load(hashlink + ' #nav_item_wrapper');
         //fix this!!! i dont know why it doesnt scroll after the load..
-        $('html,body').stop().animate({scrollTop: ($("#"+id).offset().top)-=150},{duration: 1500, easing: "easeInOutExpo"});
-
-
+        // $.when($('#secure-content').load(hashlink + ' #secure-content')).then($('html,body').stop().animate({scrollTop: ($("#"+id).offset().top)-=150},{duration: 1500, easing: "easeInOutExpo"}));
     }
     else {
         alert("incorrect password =(");
     }
+    $('html,body').stop().animate({scrollTop: ($("#"+id).offset().top)-=150},{duration: 1500, easing: "easeInOutExpo"});
+
 }
 
 
