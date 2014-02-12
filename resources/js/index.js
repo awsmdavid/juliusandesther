@@ -15,10 +15,12 @@ function login(id) {
     var theHashword = "de59daa1a72b6c1155b05eef4a431ec4";
     var password=prompt('Enter Password','');
     if (CryptoJS.MD5(password+"2aecc21ce57c973d624175017c3f4616")==theHashword){
-        // window.location = "secure"+CryptoJS.MD5(password)+".html";
         var hashlink = "secure"+CryptoJS.MD5(password)+".html";
         $('#secure-content').load(hashlink + ' #secure-content');
+        $('#nav_item_wrapper').load(hashlink + ' #nav_item_wrapper');
+        //fix this!!! i dont know why it doesnt scroll after the load..
         $('html,body').stop().animate({scrollTop: ($("#"+id).offset().top)-=150},{duration: 1500, easing: "easeInOutExpo"});
+
 
     }
     else {
