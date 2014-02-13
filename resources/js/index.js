@@ -2,6 +2,19 @@ $(window).load(function () {
     $('#mask').fadeOut('slow');
 });
 
+$(function(){
+    $('.fadein img:gt(0)').hide();
+    $('#photos-leftarrow').click(function(){
+        $('.fadein :first-child').fadeOut();
+        $('.fadein :last-child').fadeIn();
+        $('.fadein :last-child').prependTo('.fadein');
+    });
+    $('#photos-rightarrow').click(function(){$('.fadein :first-child').fadeOut()
+        .next('img').fadeIn()
+        .end().appendTo('.fadein');
+    });
+});
+
 function goToByScroll(id){
     $('html,body').stop().animate({scrollTop: ($("#"+id).offset().top)-=150},{duration: 1500, easing: "easeInOutExpo"});
 }
@@ -12,7 +25,8 @@ function loadSecureContent(password, id){
     // $('#secure-content').load(hashlink + ' #secure-content');
     $('#about-us').load(hashlink + ' #about-us');
     $('#proposal').load(hashlink + ' #proposal');
-    $('#photos').load(hashlink + ' #photos');
+    //unhide photos; photos preloaded to allow js for arrows to work
+    $('#photos').css('display','inline');
     $('#the-wedding').load(hashlink + ' #the-wedding');
     $('#registry').load(hashlink + ' #registry');
     $('#rsvp').load(hashlink + ' #rsvp');
@@ -38,16 +52,3 @@ function login(id) {
     }
    
 }
-
-$(function(){
-    $('.fadein img:gt(0)').hide();
-    $('#photos-leftarrow').click(function(){
-        $('.fadein :first-child').fadeOut();
-        $('.fadein :last-child').fadeIn();
-        $('.fadein :last-child').prependTo('.fadein');
-        });
-    $('#photos-rightarrow').click(function(){$('.fadein :first-child').fadeOut()
-        .next('img').fadeIn()
-        .end().appendTo('.fadein');
-        });
-});

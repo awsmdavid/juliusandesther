@@ -5,7 +5,7 @@ html {
     
 body {
 	font-family: georgia;
-    padding-bottom: 317px;
+    padding-bottom: 50px;
 }
 
 /*security*/
@@ -334,6 +334,9 @@ img.image_box1_content {
 	margin-right: auto;
 }
 
+#photos{
+	display: none;
+}
 
 #photos-title {
 	font-family: 'Great Vibes', cursive;
