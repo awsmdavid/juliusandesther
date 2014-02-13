@@ -6,9 +6,20 @@ function goToByScroll(id){
     $('html,body').stop().animate({scrollTop: ($("#"+id).offset().top)-=150},{duration: 1500, easing: "easeInOutExpo"});
 }
 
-function loadSecureContent(){
-    $('#secure-content').load(hashlink + ' #secure-content');
-    $('#nav_item_wrapper').load(hashlink + ' #nav_item_wrapper');
+
+function loadSecureContent(password, id){
+    var hashlink = "secure"+CryptoJS.MD5(password)+".html";
+    // $('#secure-content').load(hashlink + ' #secure-content');
+    $('#about-us').load(hashlink + ' #about-us');
+    $('#proposal').load(hashlink + ' #proposal');
+    $('#photos').load(hashlink + ' #photos');
+    $('#the-wedding').load(hashlink + ' #the-wedding');
+    $('#registry').load(hashlink + ' #registry');
+    $('#rsvp').load(hashlink + ' #rsvp');
+    //switches logins to goTo functions
+    $('#nav_item_wrapper').load(hashlink + ' #nav_item_wrapper', function(){
+        goToByScroll(id);
+    });
 }
 
 function login(id) {
@@ -20,20 +31,13 @@ function login(id) {
     var theHashword = "de59daa1a72b6c1155b05eef4a431ec4";
     var password=prompt('Enter Password','');
     if (CryptoJS.MD5(password+"2aecc21ce57c973d624175017c3f4616")==theHashword){
-        var hashlink = "secure"+CryptoJS.MD5(password)+".html";
-        $('#secure-content').load(hashlink + ' #secure-content');
-        $('#nav_item_wrapper').load(hashlink + ' #nav_item_wrapper');
-        //fix this!!! i dont know why it doesnt scroll after the load..
-        // $.when($('#secure-content').load(hashlink + ' #secure-content')).then($('html,body').stop().animate({scrollTop: ($("#"+id).offset().top)-=150},{duration: 1500, easing: "easeInOutExpo"}));
+        loadSecureContent(password, id);
     }
     else {
         alert("incorrect password =(");
     }
-    $('html,body').stop().animate({scrollTop: ($("#"+id).offset().top)-=150},{duration: 1500, easing: "easeInOutExpo"});
-
+   
 }
-
-
 
 $(function(){
     $('.fadein img:gt(0)').hide();
