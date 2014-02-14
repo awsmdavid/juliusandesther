@@ -44,6 +44,10 @@ function login(id) {
 
     var theHashword = "de59daa1a72b6c1155b05eef4a431ec4";
     var password=prompt('Enter Password','');
+
+
+
+
     if (CryptoJS.MD5(password+"2aecc21ce57c973d624175017c3f4616")==theHashword){
         loadSecureContent(password, id);
     }
@@ -52,3 +56,12 @@ function login(id) {
     }
    
 }
+
+//facebook guestbook
+// (function(d, s, id) {
+//   var js, fjs = d.getElementsByTagName(s)[0];
+//   if (d.getElementById(id)) return;
+//   js = d.createElement(s); js.id = id;
+//   js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=499053793501453";
+//   fjs.parentNode.insertBefore(js, fjs);
+// }(document, 'script', 'facebook-jssdk'));
