@@ -37,7 +37,7 @@ body {
     text-shadow: 1px 1px 0 #FFFFFF;
 }
 .login-form .header span {
-    color: #AD85FF;
+    color: #787881;
     font-size: 16px;
     line-height: 16px;
     text-shadow: 1px 1px 0 #FFFFFF;
@@ -46,7 +46,7 @@ body {
 
 #incorrect-password-message{
 	display: none;
-	color: #FFB8DB;
+	color: #AD85FF;
 	width: 300px;
 	margin-left: -30px;
 	margin-top: -25px;
