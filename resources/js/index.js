@@ -52,6 +52,13 @@ function login(id) {
     $('.login-form').css('display','inline');
     $('#login-shade').css('display','inline');
 
+    $(".content").keyup(function(event){
+        if(event.keyCode == 13){
+            event.preventDefault();
+            $('#submit-password-button').click();
+        }
+    });
+
     $('#submit-password-button').click(function(){
         // get user submitted password
         var password = document.getElementById("password").value;
@@ -74,7 +81,7 @@ function login(id) {
     });
 }
 
-//placeholder (for seach) compatibility for Firefox and IE
+//remove placeholder text on click compatibility for Firefox and IE
 $("'[placeholder]'").focus(function() {
   var input = $(this);
   if (input.val() == input.attr("'placeholder'")) {
@@ -88,3 +95,5 @@ $("'[placeholder]'").focus(function() {
     input.val(input.attr("'placeholder'"));
   }
 }).blur();
+
+

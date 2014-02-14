@@ -29,7 +29,7 @@ body {
 }
 
 .login-form .header h1 {
-    color: #414848;
+    color: #AD85FF;
     font-size: 28px;
     font-weight: 300;
     line-height: 34px;
@@ -38,7 +38,7 @@ body {
 }
 .login-form .header span {
     color: #678889;
-    font-size: 11px;
+    font-size: 16px;
     line-height: 16px;
     text-shadow: 1px 1px 0 #FFFFFF;
 }
@@ -138,6 +138,11 @@ body {
 .login-form .footer .cancel:focus {
     bottom: -1px;
     position: relative;
+}
+
+/*fix ie quirk of submitting on enter with only one field*/
+#blank{
+	display: none;
 }
 
 #login-shade {

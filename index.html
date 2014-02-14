@@ -28,6 +28,8 @@
                     </div>
                     <div class="content">
                         <input id="password" class="input password" placeholder="Password" name="password" autocomplete="off">
+                        <!-- adding hidden input used to fix quirk of automatically submitting with GET on enter for only one input field-->
+                        <input id="blank" placeholder="placeholder" autocomplete="off">
                     </div>
                     <div class="footer">
                         <span id="submit-password-button" class="submit" name="submit">Submit</span>
