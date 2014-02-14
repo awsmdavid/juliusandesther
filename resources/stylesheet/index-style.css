@@ -8,8 +8,9 @@ body {
     padding-bottom: 50px;
 }
 
-#login{
-    background: none repeat scroll 0 0 #333333;
+#enter-password{
+	font-family: 'Average Sans', sans-serif;
+    background: none repeat scroll 0 0 #AD85FF;
     border: 2px solid #DDDDDD;
     border-radius: 3px;
     box-shadow: 0 0 20px #999999;
@@ -21,10 +22,12 @@ body {
     position: fixed;
     top: 50%;
     z-index: 99999;
-
-    display: block; 
     margin-top: -111.5px; 
     margin-left: -130px;
+}
+
+#incorrect-password-message{
+	display: none;
 }
 
 /*security*/

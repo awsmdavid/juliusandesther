@@ -44,27 +44,25 @@ function login(id) {
     // var thePassword = "craps";
     // var hashword = CryptoJS.MD5("craps");
     // var hash = CryptoJS.MD5("craps"+"2aecc21ce57c973d624175017c3f4616");
-
+    
+    // set hashword (what hash of (password + random hash) equals)
     var theHashword = "de59daa1a72b6c1155b05eef4a431ec4";
-    var password=prompt('Enter Password','');
 
+    // prompt user for password
+    $('#enter-password').css('display','inline');
 
+    $('#submit-password').click(function(){
+        // get user submitted password
+        var password = document.getElementById("password").value;
 
-
-    if (CryptoJS.MD5(password+"2aecc21ce57c973d624175017c3f4616")==theHashword){
-        loadSecureContent(password, id);
-    }
-    else {
-        alert("incorrect password =(");
-    }
-   
+        if (CryptoJS.MD5(password+"2aecc21ce57c973d624175017c3f4616")==theHashword){
+            // hide password form
+            $('#enter-password').css('display','none');
+            // load secure content
+            loadSecureContent(password, id);
+        }
+        else {
+            $('#incorrect-password-message').css('display','inline');
+        }
+    });
 }
-
-//facebook guestbook
-// (function(d, s, id) {
-//   var js, fjs = d.getElementsByTagName(s)[0];
-//   if (d.getElementById(id)) return;
-//   js = d.createElement(s); js.id = id;
-//   js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=499053793501453";
-//   fjs.parentNode.insertBefore(js, fjs);
-// }(document, 'script', 'facebook-jssdk'));
