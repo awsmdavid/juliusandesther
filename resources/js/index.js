@@ -22,15 +22,18 @@ function goToByScroll(id){
 
 function loadSecureContent(password, id){
     var hashlink = "secure"+CryptoJS.MD5(password)+".html";
-    // $('#secure-content').load(hashlink + ' #secure-content');
+    // load divs
     $('#about-us').load(hashlink + ' #about-us');
     $('#proposal').load(hashlink + ' #proposal');
-    //unhide photos; photos preloaded to allow js for arrows to work
-    $('#photos').css('display','inline');
     $('#the-wedding').load(hashlink + ' #the-wedding');
     $('#registry').load(hashlink + ' #registry');
     $('#rsvp').load(hashlink + ' #rsvp');
-    //switches logins to goTo functions
+
+    // unhide photos and guestbook; photos and guestbook preloaded to allow js for arrows to work
+    $('#photos').css('display','inline');
+    $('#guestbook').css('display','inline');
+
+    // switches nav logins to goTo functions
     $('#nav_item_wrapper').load(hashlink + ' #nav_item_wrapper', function(){
         goToByScroll(id);
     });
