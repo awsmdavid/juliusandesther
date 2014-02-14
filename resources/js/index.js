@@ -1,7 +1,9 @@
+// fade mask out after load
 $(window).load(function () {
     $('#mask').fadeOut('slow');
 });
 
+// photo slideshow js
 $(function(){
     $('.fadein img:gt(0)').hide();
     $('#photos-leftarrow').click(function(){
@@ -54,15 +56,12 @@ function login(id) {
     $('.login-form').css('display','inline');
     $('#login-shade').css('display','inline');
 
+    // enter doubles as submit click
     $(".content").keyup(function(event){
         if(event.keyCode == 13){
             $('#submit-password-button').click();
         }
     });
-
-    // $(".content").click(function(event){
-    //     $('#incorrect-password-message').css('display','none');
-    // });
 
     $('#submit-password-button').click(function(){
         // get user submitted password
@@ -90,11 +89,11 @@ function login(id) {
     });
 }
 
-//remove placeholder text on click compatibility for Firefox and IE
-$("#password").focus(function() {
+//remove placeholder text on input click - compatibility for Firefox and IE
+$('#password').focus(function() {
     var input = $(this);
     if (input.val() == input.attr("'placeholder'")) {
-        input.val("''");
+        alert("fdasdf");
         input.removeClass("'placeholder'");
     }
 }).blur(function() {

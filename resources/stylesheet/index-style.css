@@ -29,7 +29,7 @@ body {
 }
 
 .login-form .header h1 {
-    color: #AD85FF;
+    color: #000000;
     font-size: 28px;
     font-weight: 300;
     line-height: 34px;
@@ -37,15 +37,16 @@ body {
     text-shadow: 1px 1px 0 #FFFFFF;
 }
 .login-form .header span {
-    color: #678889;
+    color: #AD85FF;
     font-size: 16px;
     line-height: 16px;
     text-shadow: 1px 1px 0 #FFFFFF;
+    text-align: left;
 }
 
 #incorrect-password-message{
 	display: none;
-	color: #FFA3D1;
+	color: #FFB8DB;
 	width: 300px;
 	margin-left: -30px;
 	margin-top: -25px;
@@ -70,15 +71,15 @@ body {
     width: 188px;
     text-align: left;
 }
-.login-form .content .password, .login-form .content .pass-icon {
+.login-form .content .password{
     margin-top: 25px;
 }
 .login-form .content .input:hover {
-    background: none repeat scroll 0 0 #DFE9EC;
+    background: none repeat scroll 0 0 #F8F6FF;
     color: #414848;
 }
 .login-form .content .input:focus {
-    background: none repeat scroll 0 0 #DFE9EC;
+    background: none repeat scroll 0 0 #F8F6FF;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25) inset;
     color: #414848;
 }
@@ -99,8 +100,8 @@ body {
 }
 
 .login-form .footer .submit {
-    background: none repeat scroll 0 0 #56C2E1;
-    border: 1px solid #46B3D3;
+    background: none repeat scroll 0 0 #AD85FF;
+    border: 1px solid #795DB2;
     border-radius: 5px;
     box-shadow: 0 0 2px rgba(255, 255, 255, 0.75) inset;
     color: #FFFFFF;
@@ -112,7 +113,7 @@ body {
     text-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
 }
 .login-form .footer .submit:hover {
-    background: none repeat scroll 0 0 #3F9DB8;
+    background: none repeat scroll 0 0 #9C78E6;
     border: 1px solid rgba(255, 255, 255, 0.75);
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5) inset;
 }
@@ -125,7 +126,7 @@ body {
 .login-form .footer .cancel {
     background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
     border: medium none;
-    color: #414848;
+    color: #AD85FF;
     cursor: pointer;
     display: block;
     float: right;
@@ -136,7 +137,7 @@ body {
     text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
 }
 .login-form .footer .cancel:hover {
-    color: #AD85FF;
+    color: #564280;
 }
 .login-form .footer .cancel:focus {
     bottom: -1px;
@@ -717,7 +718,11 @@ img.image_box1_content {
 	margin-bottom: 60px;
 }
 
-#tunes-title {
+#tunes{
+	padding-top: 20px;
+}
+
+/*#tunes-title {
 	font-family: 'Great Vibes', cursive;
 	font-size: 64px;
 	text-align: center;width: 338px;
@@ -726,4 +731,4 @@ img.image_box1_content {
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 60px;
-}
+}*/
