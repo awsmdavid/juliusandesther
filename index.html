@@ -17,20 +17,25 @@
     </head>
 
     <body>
-
-
-
-        <div id="enter-password">
-            <form class="signin">
-                <p id="incorrect-password-message">Incorrect password =(</p>
-                <label class="password">
-                    <span>Password: </span>
-                    <input id="password" type="text" name="password">
-                    <button id="submit-password" type="button">Submit</button>
-                </label>
-            </form>
-        </div>
-
+        <div id="login-shade"></div>
+        <center>
+            <div id="enter-password">
+                <form class="login-form">
+                    <div class="header">
+                        <h1>Enter Password</h1>
+                        <span>Please enter the password you received in the invitation!</span>
+                        <span id="incorrect-password-message">Incorrect Password =( <br> Please Try Again!</span>
+                    </div>
+                    <div class="content">
+                        <input id="password" class="input password" placeholder="Password" name="password" autocomplete="off">
+                    </div>
+                    <div class="footer">
+                        <span id="submit-password-button" class="submit" name="submit">Submit</span>
+                        <span id="cancel-password-button" class="cancel" name="cancel">Cancel</span>
+                    </div>
+                </form>
+            </div>
+        </center>
 
         <div id="mask">
     	</div>

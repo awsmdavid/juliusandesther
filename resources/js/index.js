@@ -49,20 +49,42 @@ function login(id) {
     var theHashword = "de59daa1a72b6c1155b05eef4a431ec4";
 
     // prompt user for password
-    $('#enter-password').css('display','inline');
+    $('.login-form').css('display','inline');
+    $('#login-shade').css('display','inline');
 
-    $('#submit-password').click(function(){
+    $('#submit-password-button').click(function(){
         // get user submitted password
         var password = document.getElementById("password").value;
 
         if (CryptoJS.MD5(password+"2aecc21ce57c973d624175017c3f4616")==theHashword){
             // hide password form
-            $('#enter-password').css('display','none');
+            $('.login-form').css('display','none');
+            $('#login-shade').css('display','none');
             // load secure content
             loadSecureContent(password, id);
         }
         else {
-            $('#incorrect-password-message').css('display','inline');
+            $('#incorrect-password-message').css('display','block');
         }
     });
+
+    $('#cancel-password-button').click(function(){
+        $('.login-form').css('display','none');
+        $('#login-shade').css('display','none');
+    });
 }
+
+//placeholder (for seach) compatibility for Firefox and IE
+$("'[placeholder]'").focus(function() {
+  var input = $(this);
+  if (input.val() == input.attr("'placeholder'")) {
+    input.val("''");
+    input.removeClass("'placeholder'");
+  }
+}).blur(function() {
+  var input = $(this);
+  if (input.val() == "''" || input.val() == input.attr("'placeholder'")) {
+    input.addClass("'placeholder'");
+    input.val(input.attr("'placeholder'"));
+  }
+}).blur();

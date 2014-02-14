@@ -6,39 +6,151 @@ html {
 body {
 	font-family: georgia;
     padding-bottom: 50px;
+    margin-left: 0;
 }
 
-#enter-password{
+/*test*/
+.login-form {
+	display: none;
 	font-family: 'Average Sans', sans-serif;
-    background: none repeat scroll 0 0 #AD85FF;
-    border: 2px solid #DDDDDD;
-    border-radius: 3px;
-    box-shadow: 0 0 20px #999999;
-    display: none;
-    float: left;
-    font-size: 1.2em;
-    left: 50%;
-    padding: 10px;
+    background: none repeat scroll 0 0 #F3F3F3;
+    border: 1px solid #FFFFFF;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+    margin: 0 auto;
     position: fixed;
-    top: 50%;
-    z-index: 99999;
-    margin-top: -111.5px; 
-    margin-left: -130px;
+    width: 300px;
+    z-index: 10000000;
+    margin-top: 100px;
+    margin-left: -150px;
+}
+.login-form .header {
+    padding: 40px 30px 30px;
+}
+
+.login-form .header h1 {
+    color: #414848;
+    font-size: 28px;
+    font-weight: 300;
+    line-height: 34px;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 0 #FFFFFF;
+}
+.login-form .header span {
+    color: #678889;
+    font-size: 11px;
+    line-height: 16px;
+    text-shadow: 1px 1px 0 #FFFFFF;
 }
 
 #incorrect-password-message{
 	display: none;
+	color: red;
+	width: 100%;
+	text-align: center;
 }
 
-/*security*/
-#cboxOverlay {
+.login-form .content {
+    padding: 0 30px 25px;
+}
+
+.login-form .content .input {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #FFFFFF;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5) inset;
+    color: #9D9E9E;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 15px 25px;
+    text-shadow: 1px 1px 0 #FFFFFF;
+    width: 188px;
+    text-align: left;
+}
+.login-form .content .password, .login-form .content .pass-icon {
+    margin-top: 25px;
+}
+.login-form .content .input:hover {
+    background: none repeat scroll 0 0 #DFE9EC;
+    color: #414848;
+}
+.login-form .content .input:focus {
+    background: none repeat scroll 0 0 #DFE9EC;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25) inset;
+    color: #414848;
+}
+
+.input, .submit, .cancel {
+    transition: all 0.5s ease 0s;
+}
+.login-form .submit {
+    background: none repeat scroll 0 0 #D4DEDF;
+    border-top: 1px solid #FFFFFF;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.15) inset;
+    overflow: auto;
+    padding: 25px 30px 40px;
+   	margin-right: 40px;
+}
+.login-form .footer {
+	padding-bottom: 100px;
+}
+
+.login-form .footer .submit {
+    background: none repeat scroll 0 0 #56C2E1;
+    border: 1px solid #46B3D3;
+    border-radius: 5px;
+    box-shadow: 0 0 2px rgba(255, 255, 255, 0.75) inset;
+    color: #FFFFFF;
+    cursor: pointer;
+    float: right;
+    font-size: 18px;
+    font-weight: 300;
+    padding: 11px 25px;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+}
+.login-form .footer .submit:hover {
+    background: none repeat scroll 0 0 #3F9DB8;
+    border: 1px solid rgba(255, 255, 255, 0.75);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5) inset;
+}
+.login-form .footer .submit:focus {
+    background: none repeat scroll 0 0 #56C2E1;
+    bottom: -1px;
+    box-shadow: 0 1px 6px rgba(255, 255, 255, 0.75) inset;
+    position: relative;
+}
+.login-form .footer .cancel {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border: medium none;
+    color: #414848;
+    cursor: pointer;
+    display: block;
+    float: right;
+    font-size: 18px;
+    font-weight: 300;
+    margin-right: 40px;
+    padding: 10px;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+.login-form .footer .cancel:hover {
+    color: #AD85FF;
+}
+.login-form .footer .cancel:focus {
+    bottom: -1px;
+    position: relative;
+}
+
+#login-shade {
     background: none repeat scroll 0 0 #000000;
     height: 100%;
     position: fixed;
     width: 100%;
     z-index: 999;
+    opacity: .4;
+    display: none;
 }
 
+/*begin body*/
 a {
     color: #AD85FF;
     text-decoration: underline;
