@@ -15,11 +15,12 @@ $(function(){
     });
 });
 
+// scroll to section 'id'
 function goToByScroll(id){
     $('html,body').stop().animate({scrollTop: ($("#"+id).offset().top)-=150},{duration: 1500, easing: "easeInOutExpo"});
 }
 
-
+// load secure content from secure page
 function loadSecureContent(password, id){
     var hashlink = "secure"+CryptoJS.MD5(password)+".html";
     // load divs
@@ -39,6 +40,7 @@ function loadSecureContent(password, id){
     });
 }
 
+// login
 function login(id) {
     // use to generate future pws
     // var thePassword = "craps";
@@ -54,10 +56,13 @@ function login(id) {
 
     $(".content").keyup(function(event){
         if(event.keyCode == 13){
-            event.preventDefault();
             $('#submit-password-button').click();
         }
     });
+
+    // $(".content").click(function(event){
+    //     $('#incorrect-password-message').css('display','none');
+    // });
 
     $('#submit-password-button').click(function(){
         // get user submitted password
@@ -72,28 +77,32 @@ function login(id) {
         }
         else {
             $('#incorrect-password-message').css('display','block');
+            $('form').get(0).reset();
         }
     });
 
     $('#cancel-password-button').click(function(){
+        // reset everything
         $('.login-form').css('display','none');
         $('#login-shade').css('display','none');
+        $('#incorrect-password-message').css('display','none');
+        $('form').get(0).reset();
     });
 }
 
 //remove placeholder text on click compatibility for Firefox and IE
-$("'[placeholder]'").focus(function() {
-  var input = $(this);
-  if (input.val() == input.attr("'placeholder'")) {
-    input.val("''");
-    input.removeClass("'placeholder'");
-  }
+$("#password").focus(function() {
+    var input = $(this);
+    if (input.val() == input.attr("'placeholder'")) {
+        input.val("''");
+        input.removeClass("'placeholder'");
+    }
 }).blur(function() {
-  var input = $(this);
-  if (input.val() == "''" || input.val() == input.attr("'placeholder'")) {
-    input.addClass("'placeholder'");
-    input.val(input.attr("'placeholder'"));
-  }
+    var input = $(this);
+    if (input.val() == "''" || input.val() == input.attr("'placeholder'")) {
+        input.addClass("'placeholder'");
+        input.val(input.attr("'placeholder'"));
+    }
 }).blur();
 
 

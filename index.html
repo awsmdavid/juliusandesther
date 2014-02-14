@@ -24,12 +24,12 @@
                     <div class="header">
                         <h1>Enter Password</h1>
                         <span>Please enter the password you received in the invitation!</span>
-                        <span id="incorrect-password-message">Incorrect Password =( <br> Please Try Again!</span>
                     </div>
                     <div class="content">
+                        <span id="incorrect-password-message">Incorrect Password =( <br> Please Try Again!</span>
                         <input id="password" class="input password" placeholder="Password" name="password" autocomplete="off">
                         <!-- adding hidden input used to fix quirk of automatically submitting with GET on enter for only one input field-->
-                        <input id="blank" placeholder="placeholder" autocomplete="off">
+                        <input id="blank">
                     </div>
                     <div class="footer">
                         <span id="submit-password-button" class="submit" name="submit">Submit</span>
@@ -129,13 +129,14 @@
                     <div id="fb-root"></div>
                     <div class="fb-comments" data-href="http://juliusandesther.com" data-width="670" data-num-posts="10"></div>
                 </center>
-            </br>
             </div>
         </div>
 
         <center>
             <div id="MusicPlayer">
-                <br/>
+                <div id="tunes-title">
+                    Tunes
+                </div>
                 <object width="500" height="350" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" id="gsPlaylist94968192" name="gsPlaylist94968192">
                     <param name="movie" value="http://grooveshark.com/widget.swf" />
                     <param name="wmode" value="window" />
