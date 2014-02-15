@@ -94,20 +94,3 @@ function login(id) {
         $('form').get(0).reset();
     });
 }
-
-// //remove placeholder text on input click - compatibility for Firefox and IE
-// $('#password').focus(function() {
-//     var input = $(this);
-//     if (input.val() == input.attr("'placeholder'")) {
-//         alert("fdasdf");
-//         input.removeClass("'placeholder'");
-//     }
-// }).blur(function() {
-//     var input = $(this);
-//     if (input.val() == "''" || input.val() == input.attr("'placeholder'")) {
-//         input.addClass("'placeholder'");
-//         input.val(input.attr("'placeholder'"));
-//     }
-// }).blur();
-
-
