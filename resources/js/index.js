@@ -36,7 +36,7 @@ function loadSecureContent(password, id){
     $('#photos').css('display','inline');
     $('#guestbook').css('display','inline');
 
-    // switches nav logins to goTo functions
+    // switches nav logins to goTo functions, then scrolls to section id user clicked on
     $('#nav_item_wrapper').load(hashlink + ' #nav_item_wrapper', function(){
         goToByScroll(id);
     });
@@ -55,6 +55,7 @@ function login(id) {
     // prompt user for password
     $('.login-form').css('display','inline');
     $('#login-shade').css('display','inline');
+    $('#password').focus();
 
     // enter doubles as submit click
     $(".content").keyup(function(event){
@@ -63,10 +64,12 @@ function login(id) {
         }
     });
 
+    // on click of Submit password button
     $('#submit-password-button').click(function(){
         // get user submitted password
         var password = document.getElementById("password").value;
 
+        // if password is correct
         if (CryptoJS.MD5(password+"2aecc21ce57c973d624175017c3f4616")==theHashword){
             // hide password form
             $('.login-form').css('display','none');
@@ -74,12 +77,15 @@ function login(id) {
             // load secure content
             loadSecureContent(password, id);
         }
+
+        // if incorrect password
         else {
             $('#incorrect-password-message').css('display','block');
             $('form').get(0).reset();
         }
     });
 
+    // cancel button
     $('#cancel-password-button').click(function(){
         // reset everything
         $('.login-form').css('display','none');
@@ -89,19 +95,19 @@ function login(id) {
     });
 }
 
-//remove placeholder text on input click - compatibility for Firefox and IE
-$('#password').focus(function() {
-    var input = $(this);
-    if (input.val() == input.attr("'placeholder'")) {
-        alert("fdasdf");
-        input.removeClass("'placeholder'");
-    }
-}).blur(function() {
-    var input = $(this);
-    if (input.val() == "''" || input.val() == input.attr("'placeholder'")) {
-        input.addClass("'placeholder'");
-        input.val(input.attr("'placeholder'"));
-    }
-}).blur();
+// //remove placeholder text on input click - compatibility for Firefox and IE
+// $('#password').focus(function() {
+//     var input = $(this);
+//     if (input.val() == input.attr("'placeholder'")) {
+//         alert("fdasdf");
+//         input.removeClass("'placeholder'");
+//     }
+// }).blur(function() {
+//     var input = $(this);
+//     if (input.val() == "''" || input.val() == input.attr("'placeholder'")) {
+//         input.addClass("'placeholder'");
+//         input.val(input.attr("'placeholder'"));
+//     }
+// }).blur();
 
 
