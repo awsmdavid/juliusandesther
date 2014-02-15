@@ -9,6 +9,19 @@ body {
     margin-left: 0;
 }
 
+#date{
+	font-family: 'Average Sans', sans-serif;
+	color: #787881;
+	text-transform: uppercase;
+	position: fixed;
+	text-align: center;
+	padding-top: 20px;
+	float: left;
+	margin-left: 46%;
+	z-index: 100000;
+	display: none;
+}
+
 /*test*/
 .login-form {
 	display: none;

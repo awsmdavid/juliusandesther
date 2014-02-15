@@ -1,6 +1,8 @@
 // fade mask out after load
 $(window).load(function () {
-    $('#mask').fadeOut('slow');
+    $('#mask').fadeOut('slow');    
+    $('#date').fadeIn('slow');
+    // $('#date').css('display', 'inline');
 });
 
 // photo slideshow js
