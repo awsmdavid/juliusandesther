@@ -1,6 +1,6 @@
 // fade mask out after load
 $(window).load(function () {
-    $('#mask').fadeOut('slow');    
+    $('#mask').fadeOut('slow');
     $('#date').fadeIn('slow');
     // $('#date').css('display', 'inline');
 });
@@ -26,15 +26,16 @@ function goToByScroll(id){
 
 // load secure content from secure page
 function loadSecureContent(password, id){
+    // hashLink is address of the webpage that contains secure content
     var hashlink = "secure"+CryptoJS.MD5(password)+".html";
-    // load divs
+    // load content from secure page
     $('#about-us').load(hashlink + ' #about-us');
     $('#proposal').load(hashlink + ' #proposal');
     $('#the-wedding').load(hashlink + ' #the-wedding');
     $('#registry').load(hashlink + ' #registry');
     $('#rsvp').load(hashlink + ' #rsvp');
 
-    // unhide photos and guestbook; photos and guestbook preloaded to allow js for arrows to work
+    // unhide photos and guestbook; photos and guestbook preloaded to allow js to work properly
     $('#photos').css('display','inline');
     $('#guestbook').css('display','inline');
 
@@ -58,19 +59,16 @@ function login(id) {
     $('.login-form').css('display','inline');
     $('#login-shade').css('display','inline');
     $('#password').focus();
-
     // enter doubles as submit click
     $(".content").keyup(function(event){
         if(event.keyCode == 13){
             $('#submit-password-button').click();
         }
     });
-
     // on click of Submit password button
     $('#submit-password-button').click(function(){
         // get user submitted password
         var password = document.getElementById("password").value;
-
         // if password is correct
         if (CryptoJS.MD5(password+"2aecc21ce57c973d624175017c3f4616")==theHashword){
             // hide password form
@@ -79,14 +77,12 @@ function login(id) {
             // load secure content
             loadSecureContent(password, id);
         }
-
         // if incorrect password
         else {
             $('#incorrect-password-message').css('display','block');
             $('form').get(0).reset();
         }
     });
-
     // cancel button
     $('#cancel-password-button').click(function(){
         // reset everything

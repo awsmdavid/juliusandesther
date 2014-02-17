@@ -731,6 +731,17 @@ img.image_box1_content {
 	margin-bottom: 60px;
 }
 
+#heart-divider{
+	background: url("http://juliusandesther.com/resources/img/heartdiv.png") no-repeat scroll center bottom transparent;
+	font-family: 'Great Vibes', cursive;
+	font-size: 64px;
+	text-align: center;
+	width: 399px;
+	height: 60px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 #tunes{
 	padding-top: 20px;
 }
