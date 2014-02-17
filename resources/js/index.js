@@ -28,6 +28,7 @@ function goToByScroll(id){
 function loadSecureContent(password, id){
     // hashLink is address of the webpage that contains secure content
     var hashlink = "secure"+CryptoJS.MD5(password)+".html";
+
     // load content from secure page
     $('#about-us').load(hashlink + ' #about-us');
     $('#proposal').load(hashlink + ' #proposal');
@@ -39,7 +40,7 @@ function loadSecureContent(password, id){
     $('#photos').css('display','inline');
     $('#guestbook').css('display','inline');
 
-    // switches nav logins to goTo functions, then scrolls to section id user clicked on
+    // switches nav logins to goTo functions, then scrolls to the section id user clicked on
     $('#nav_item_wrapper').load(hashlink + ' #nav_item_wrapper', function(){
         goToByScroll(id);
     });
@@ -47,7 +48,7 @@ function loadSecureContent(password, id){
 
 // login
 function login(id) {
-    // use to generate future pws
+    //// use to generate future pws
     // var thePassword = "craps";
     // var hashword = CryptoJS.MD5("craps");
     // var hash = CryptoJS.MD5("craps"+"2aecc21ce57c973d624175017c3f4616");
