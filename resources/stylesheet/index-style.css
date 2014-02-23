@@ -488,6 +488,19 @@ img.image_box1_content {
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
+	padding-bottom: 30px;
+}
+
+#proposal-section-title{
+	font-family: 'Average Sans', sans-serif;
+	color: #AD85FF;
+	text-transform: uppercase;
+	text-align: center;
+	float: left;
+}
+
+#proposal-section-content{
+	font-size: 15px;
 }
 
 #photos{
@@ -579,9 +592,9 @@ img.image_box1_content {
 
 #wedding-header{
 	font-family: 'Great Vibes', cursive;
-	font-size: 28px;
+	font-size: 32px;
 	text-align: center;
-	height: 30px;
+	height: 34px;
 }
 
 #ceremony-box-top {
@@ -635,7 +648,7 @@ img.image_box1_content {
 #wedding-map{
 	font-size: 64px;
 	text-align: center;
-	width: 399px;
+	width: 499px;
 	height: 299px;
 	margin-left: auto;
 	margin-right: auto;
