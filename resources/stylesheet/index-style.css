@@ -615,23 +615,19 @@ img.image_box1_content {
 }
 
 #ceremony-image{
-	background: url("http://juliusandesther.com/resources/img/wedding/odpc.png") no-repeat scroll center bottom transparent;
-	font-family: 'Great Vibes', cursive;
 	font-size: 64px;
 	text-align: center;
 	width: 399px;
-	height: 60px;
+	height: 299px;
 	margin-left: auto;
 	margin-right: auto;
 }	
 
 #reception-image{
-	background: url("http://juliusandesther.com/resources/img/wedding/top-of-the-town.jpg") no-repeat scroll center bottom transparent;
-	font-family: 'Great Vibes', cursive;
 	font-size: 64px;
 	text-align: center;
 	width: 399px;
-	height: 60px;
+	height: 299px;
 	margin-left: auto;
 	margin-right: auto;
 }	
