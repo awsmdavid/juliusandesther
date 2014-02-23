@@ -488,7 +488,15 @@ img.image_box1_content {
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
-	padding-bottom: 30px;
+	margin-bottom: 90px;
+}
+
+#proposal-section-date{
+	font-family: 'Average Sans', sans-serif;
+	font-size: 22px;
+	color: #AD85FF;
+	text-transform: uppercase;
+	text-align: center;	
 }
 
 #proposal-section-title{
@@ -499,8 +507,43 @@ img.image_box1_content {
 	float: left;
 }
 
+#proposal-story{
+	width: 1100px;
+	height: 3000px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 #proposal-section-content{
-	font-size: 15px;
+	font-size: 13px;
+}
+
+#proposal-section-image{
+	background: url("http://juliusandesther.com/resources/img/bg-photo-frame.png") no-repeat;
+	background-size: 450px 300px;
+	margin-left: 45px;
+}
+
+#proposal-right{
+	float: right;
+	width: 500px;
+	margin-left: 50px;
+	height: 400px;
+}
+
+#proposal-left{
+	float: left;
+	width: 500px;
+	margin-left: 50px;
+	height: 400px;
+}
+
+#proposal-thanks{
+	height: 40px;
+	width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
 }
 
 #photos{
@@ -510,7 +553,8 @@ img.image_box1_content {
 #photos-title {
 	font-family: 'Great Vibes', cursive;
 	font-size: 64px;
-	text-align: center;width: 151px;
+	text-align: center;
+	width: 151px;
 	height: 68px;
 	margin-top: 40px;
 	margin-left: auto;
