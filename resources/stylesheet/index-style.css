@@ -632,6 +632,15 @@ img.image_box1_content {
 	margin-right: auto;
 }	
 
+#wedding-map{
+	font-size: 64px;
+	text-align: center;
+	width: 399px;
+	height: 299px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 #box1-middle {
 	background: url("http://juliusandesther.com/resources/img/bg-box1-middle.png") repeat-y scroll center bottom transparent;
 	width: 687px;
