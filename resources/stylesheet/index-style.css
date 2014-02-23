@@ -483,8 +483,8 @@ img.image_box1_content {
 	margin-right: auto;
 }
 
-#proposal-wrapper {
-	height: 400px;
+#proposal-subtitle {
+	height: 40px;
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
@@ -577,6 +577,12 @@ img.image_box1_content {
 	margin-right: auto;
 }
 
+#wedding-header{
+	font-family: 'Great Vibes', cursive;
+	font-size: 28px;
+	text-align: center;
+	height: 30px;
+}
 
 #ceremony-box-top {
 	background: url("http://juliusandesther.com/resources/img/bg-box1-top-ceremony.png") no-repeat scroll center bottom transparent;
@@ -607,7 +613,29 @@ img.image_box1_content {
 	margin-left: auto;
 	margin-right: auto;
 }
-	
+
+#ceremony-image{
+	background: url("http://juliusandesther.com/resources/img/wedding/odpc.png") no-repeat scroll center bottom transparent;
+	font-family: 'Great Vibes', cursive;
+	font-size: 64px;
+	text-align: center;
+	width: 399px;
+	height: 60px;
+	margin-left: auto;
+	margin-right: auto;
+}	
+
+#reception-image{
+	background: url("http://juliusandesther.com/resources/img/wedding/top-of-the-town.jpg") no-repeat scroll center bottom transparent;
+	font-family: 'Great Vibes', cursive;
+	font-size: 64px;
+	text-align: center;
+	width: 399px;
+	height: 60px;
+	margin-left: auto;
+	margin-right: auto;
+}	
+
 #box1-middle {
 	background: url("http://juliusandesther.com/resources/img/bg-box1-middle.png") repeat-y scroll center bottom transparent;
 	width: 687px;
