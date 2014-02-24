@@ -9,7 +9,7 @@ body {
     margin-left: 0;
 }
 
-#date{
+/*#date{
 	font-family: 'Average Sans', sans-serif;
 	color: #787881;
 	text-transform: uppercase;
@@ -21,7 +21,7 @@ body {
 	z-index: 100000;
 	display: none;
 
-}
+}*/
 
 /*test*/
 .login-form {
