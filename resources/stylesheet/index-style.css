@@ -212,7 +212,7 @@ img.image_box1_content {
     background: url("http://juliusandesther.com/resources/img/nav_shadow.png") repeat-x scroll center bottom transparent;
     position: fixed;
     top: 0px;
-    left: 0px;
+    left: -5px;
     height: 158px;
     width: 100%;
 	z-index: 999;
@@ -488,7 +488,7 @@ img.image_box1_content {
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
-	margin-bottom: 90px;
+	margin-bottom: 30px;
 }
 
 #proposal-section-date{
