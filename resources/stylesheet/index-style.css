@@ -505,6 +505,7 @@ img.image_box1_content {
 	text-transform: uppercase;
 	text-align: center;
 	float: left;
+	display: block;
 }
 
 #proposal-story{
@@ -519,23 +520,25 @@ img.image_box1_content {
 }
 
 #proposal-section-image{
-	background: url("http://juliusandesther.com/resources/img/bg-photo-frame.png") no-repeat;
-	background-size: 450px 300px;
+	/*background: url("http://juliusandesther.com/resources/img/bg-photo-frame.png") no-repeat;*/
+	background-size: 300px 300px;
 	margin-left: 45px;
 }
 
 #proposal-right{
 	float: right;
-	width: 500px;
+	width: 400px;
 	margin-left: 50px;
-	height: 400px;
+	height: 600px;
+	display: block;
 }
 
 #proposal-left{
 	float: left;
-	width: 500px;
+	width: 400px;
 	margin-left: 50px;
-	height: 400px;
+	height: 600px;
+	display: block;
 }
 
 #proposal-thanks{
