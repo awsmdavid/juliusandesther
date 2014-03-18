@@ -9,6 +9,15 @@ body {
     margin-left: 0;
 }
 
+.right-align{
+	text-align: right;
+	width: 300px;
+}
+.left-align{
+	text-align: left;
+	width: 300px;
+}
+
 /*#date{
 	font-family: 'Average Sans', sans-serif;
 	color: #787881;
