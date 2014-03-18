@@ -613,6 +613,13 @@ img.image_box1_content {
 	height: 34px;
 }
 
+#hotel-header{
+	font-family: 'Great Vibes', cursive;
+	font-size: 32px;
+	text-align: center;
+	height: 34px;
+}
+
 #ceremony-box-top {
 	background: url("http://juliusandesther.com/resources/img/bg-box1-top-ceremony.png") no-repeat scroll center bottom transparent;
 	width: 739px;
@@ -644,6 +651,15 @@ img.image_box1_content {
 }
 
 #ceremony-image{
+	font-size: 64px;
+	text-align: center;
+	width: 399px;
+	height: 299px;
+	margin-left: auto;
+	margin-right: auto;
+}	
+
+#reception-image{
 	font-size: 64px;
 	text-align: center;
 	width: 399px;
