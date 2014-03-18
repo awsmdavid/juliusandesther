@@ -30,20 +30,31 @@ function loadSecureContent(password, id){
     var hashlink = "secure"+CryptoJS.MD5(password)+".html";
 
     // load content from secure page
-    $('#about-us').load(hashlink + ' #about-us');
-    $('#proposal').load(hashlink + ' #proposal');
-    $('#the-wedding').load(hashlink + ' #the-wedding');
-    $('#registry').load(hashlink + ' #registry');
-    $('#rsvp').load(hashlink + ' #rsvp');
-
-    // unhide photos and guestbook; photos and guestbook preloaded to allow js to work properly
-    $('#photos').css('display','inline');
-    $('#guestbook').css('display','inline');
-
+    // $('#about-us').load(hashlink + ' #about-us');
+    // $('#proposal').load(hashlink + ' #proposal');
+    // $('#the-wedding').load(hashlink + ' #the-wedding');
+    // $('#registry').load(hashlink + ' #registry');
+    // $('#rsvp').load(hashlink + ' #rsvp');
+    $('#about-us').load(hashlink + ' #about-us', function(){
+    $('#proposal').load(hashlink + ' #proposal',function(){
+    $('#the-wedding').load(hashlink + ' #the-wedding', function(){
+    $('#registry').load(hashlink + ' #registry',function(){
+    $('#rsvp').load(hashlink + ' #rsvp',function(){
+ 
     // switches nav logins to goTo functions, then scrolls to the section id user clicked on
     $('#nav_item_wrapper').load(hashlink + ' #nav_item_wrapper', function(){
         goToByScroll(id);
     });
+    });
+    });
+    });
+    });
+    });
+    // unhide photos and guestbook; photos and guestbook preloaded to allow js to work properly
+    $('#photos').css('display','inline');
+    $('#guestbook').css('display','inline');
+
+
 }
 
 // login
