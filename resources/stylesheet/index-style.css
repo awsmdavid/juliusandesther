@@ -796,11 +796,17 @@ img.image_box1_content {
 	font-family: 'Great Vibes', cursive;
 	font-size: 64px;
 	text-align: center;width: 338px;
-	height: 125px;
+	height: 75px;
 	margin-top: 120px;
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 60px;
+}
+
+#rsvp-link{
+	height: 200;
+	font-family: 'Great Vibes', cursive;
+	font-size: 32px;
 }
 
 #guestbook{
