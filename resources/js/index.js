@@ -59,16 +59,6 @@ function loadSecureContent(password, id){
 
 // login
 function login(id) {
-    //// use to generate future pws
-    // var thePassword = "craps";
-    // var hashword = CryptoJS.MD5("craps");
-    // var hash = CryptoJS.MD5("craps"+"2aecc21ce57c973d624175017c3f4616");
-
-    var thePassword = "11.22.2013";
-    var hashword = CryptoJS.MD5("11.22.2013");
-    var hash = CryptoJS.MD5("11.22.2013"+"2aecc21ce57c973d624175017c3f4616");
-    alert(hashword);
-
 
     // set hashword (what hash of (password + random hash) equals)
     var theHashword = "fe9b29b33cabd2ea67b9e51e42993735";
