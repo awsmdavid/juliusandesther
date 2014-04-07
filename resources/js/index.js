@@ -28,7 +28,7 @@ function goToByScroll(id){
 function loadSecureContent(password, id){
     // hashLink is address of the webpage that contains secure content
     var hashlink = "secure"+CryptoJS.MD5(password)+".html";
-    alert(hashlink);
+
     // load content from secure page
     // $('#about-us').load(hashlink + ' #about-us');
     // $('#proposal').load(hashlink + ' #proposal');
@@ -61,16 +61,7 @@ function loadSecureContent(password, id){
 function login(id) {
 
     // set hashword (what hash of (password + random hash) equals)
-    //be0e94d8a2afcab135a8eaef594a3352
     var theHashword = "fe9b29b33cabd2ea67b9e51e42993735";
-    // var thePassword = "11.22.2013";
-    // var hashword = CryptoJS.MD5("11.22.2013");
-    // var hash = CryptoJS.MD5("11.22.2013"+"2aecc21ce57c973d624175017c3f4616");
-
-    alert(hashword);
-
-
-
 
     // prompt user for password
     $('.login-form').css('display','inline');
