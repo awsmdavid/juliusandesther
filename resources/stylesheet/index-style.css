@@ -703,8 +703,8 @@ img.image_box1_content {
 
 
 #weddingparty-wrapper {
-	width: 930px;
-	margin-top: 0px;
+	width: 1000px;
+	margin-top: -30px;
 	margin-bottom: 0px;
 	margin-left: auto;
 	margin-right: auto;
@@ -716,10 +716,9 @@ img.image_box1_content {
 	float: left;
 	margin-top: 30px;
 	margin-bottom: 20px;
-	margin-left: auto;
-	margin-right: auto;
 	text-align: center;
 	font-size: 13px;
+	padding-left: 16px;
 }
 
 #bm-title {
@@ -739,10 +738,9 @@ img.image_box1_content {
 	float: right;
 	margin-top: 30px;
 	margin-bottom: 20px;
-	margin-left: auto;
-	margin-right: auto;
 	text-align: center;
 	font-size: 13px;
+	right: 0;
 }
 
 #gm-title {
@@ -787,6 +785,22 @@ img.image_box1_content {
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 60px;
+}
+
+.rsvp-img {
+ margin-bottom: 10px;
+ width: 628px;
+ height: 523px;
+ display:block;
+ background:transparent url("http://juliusandesther.com/resources/img/rsvp-img.jpg") center top no-repeat;
+border-radius: 15px;
+-moz-border-radius: 15px;
+}
+
+.rsvp-img:hover {
+   background-image: url("http://juliusandesther.com/resources/img/rsvp-hover-img.jpg");
+border-radius: 15px;
+-moz-border-radius: 15px;
 }
 
 #rsvp-link{
