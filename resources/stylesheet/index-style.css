@@ -18,21 +18,6 @@ body {
 	width: 300px;
 }
 
-/*#date{
-	font-family: 'Average Sans', sans-serif;
-	color: #787881;
-	text-transform: uppercase;
-	position: fixed;
-	text-align: center;
-	padding-top: 20px;
-	float: left;
-	margin-left: 46%;
-	z-index: 100000;
-	display: none;
-
-}*/
-
-/*test*/
 .login-form {
 	display: none;
 	font-family: 'Average Sans', sans-serif;
@@ -40,12 +25,13 @@ body {
     border: 1px solid #FFFFFF;
     border-radius: 5px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
-    margin: 0 auto;
     position: fixed;
     width: 300px;
     z-index: 10000000;
     margin-top: 100px;
-    margin-left: -150px;
+    left: 50%;
+	margin-left: -150px;
+	
 }
 .login-form .header {
     padding: 40px 30px 30px;
@@ -717,8 +703,8 @@ img.image_box1_content {
 
 
 #weddingparty-wrapper {
-	width: 930px;
-	margin-top: 0px;
+	width: 1000px;
+	margin-top: -30px;
 	margin-bottom: 0px;
 	margin-left: auto;
 	margin-right: auto;
@@ -730,10 +716,9 @@ img.image_box1_content {
 	float: left;
 	margin-top: 30px;
 	margin-bottom: 20px;
-	margin-left: auto;
-	margin-right: auto;
 	text-align: center;
 	font-size: 13px;
+	padding-left: 16px;
 }
 
 #bm-title {
@@ -753,10 +738,9 @@ img.image_box1_content {
 	float: right;
 	margin-top: 30px;
 	margin-bottom: 20px;
-	margin-left: auto;
-	margin-right: auto;
 	text-align: center;
 	font-size: 13px;
+	right: 0;
 }
 
 #gm-title {
@@ -801,6 +785,22 @@ img.image_box1_content {
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 60px;
+}
+
+.rsvp-img {
+ margin-bottom: 10px;
+ width: 628px;
+ height: 523px;
+ display:block;
+ background:transparent url("http://juliusandesther.com/resources/img/rsvp-img.jpg") center top no-repeat;
+border-radius: 15px;
+-moz-border-radius: 15px;
+}
+
+.rsvp-img:hover {
+   background-image: url("http://juliusandesther.com/resources/img/rsvp-hover-img.jpg");
+border-radius: 15px;
+-moz-border-radius: 15px;
 }
 
 #rsvp-link{
